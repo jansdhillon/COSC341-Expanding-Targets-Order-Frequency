@@ -1,0 +1,62 @@
+html, body{
+    height: 99%;
+    background-color: navy;
+}
+.app-window{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(400px,400px) 1fr;
+}
+.sidebar{
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: goldenrod;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.ui-container{
+    position: relative;
+    display: grid;
+    background-color: navy;
+    place-items: center;
+}
+.volume-text{
+    color: goldenrod;
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+}
+.button-container{
+    border-radius: 25px;
+    background-color: goldenrod;
+    height: 400px;
+    width: 200px;
+    display: grid;
+    place-items: center;
+}
+.volume-button{
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: bold;
+}
+.volume-controls{
+    text-align: center;
+}
+#tester{
+    background-color: goldenrod;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    left: 50%;
+    top: 5%;
+    width: 30%;
+    height: 15%;
+    border-radius: 25px;
+    text-align: center;
+}
+#volume-target{
+    font-weight: bold;
+}
