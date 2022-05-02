@@ -1,0 +1,83 @@
+html, body{
+    height: 99%;
+    background-color: navy;
+}
+.app-window{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(400px,400px) 1fr;
+}
+.sidebar{
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: goldenrod;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.ui-container{
+    position: relative;
+    display: grid;
+    background-color: navy;
+    place-items: center;
+}
+#volume-display{
+    font-weight: bold;
+    font-size: large;
+}
+#speaker{
+    height: 40px;
+    width: 40px;
+    margin-right: 1em;
+}
+#volume-controls{
+    width: 900px;
+    height: 200px;
+    border-radius: 25px;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#volume-bar{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5em;
+}
+.volume-tick{
+    position: relative;
+    text-align: center;
+    margin-left: 0.5em;
+}
+.centered-text{
+    font-size: 1em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.tick-border{
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+}
+#tester{
+    background-color: goldenrod;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    left: 50%;
+    top: 5%;
+    width: 400px;
+    height: 200px;
+    border-radius: 25px;
+    text-align: center;
+}
+#volume-target{
+    font-weight: bold;
+}

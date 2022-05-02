@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TuneOut</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+  </head>
+  <body>
+    <div class="app-window">
+      <div class="sidebar">
+        <img id="player-button" src="https://people.ok.ubc.ca/bowenhui/341/2020/project/a8assets/play.png"/>
+        <audio id="music-player">
+          <source src="https://people.ok.ubc.ca/bowenhui/341/2020/project/a8assets/sample_song.mp3" type="audio/mpeg">
+        </audio>
+        <p id="volume-display">Music Paused</p>
+      </div>
+      <div class="ui-container">
+        <div id="volume-controls">
+          <img id="speaker" src="https://people.ok.ubc.ca/bowenhui/341/2020/project/a8assets/speaker.png"/>
+          <div id="volume-bar">
+            <img id="button-0" class="volume-tick" data-volume="0" src="https://people.ok.ubc.ca/bowenhui/341/2020/project/a8assets/mute_button.png" width=50 height=50/>
+            <img id="button-1" class="volume-tick" data-volume="20" src="https://people.ok.ubc.ca/bowenhui/341/2020/project/a8assets/20_button.png" width=50 height=50/>
+            <img id="button-2" class="volume-tick" data-volume="40" src="https://people.ok.ubc.ca/bowenhui/341/2020/project/a8assets/40_button.png" width=50 height=50/>
+            <img id="button-3" class="volume-tick" data-volume="60" src="https://people.ok.ubc.ca/bowenhui/341/2020/project/a8assets/60_button.png" width=50 height=50/>
+            <img id="button-4" class="volume-tick" data-volume="80" src="https://people.ok.ubc.ca/bowenhui/341/2020/project/a8assets/80_button.png" width=50 height=50/>
+            <img id="button-5" class="volume-tick" data-volume="100" src="https://people.ok.ubc.ca/bowenhui/341/2020/project/a8assets/100_button.png" width=50 height=50/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="tester">
+      <p id="counter">There are 6 trials in total</p>
+      <p id="volume-target">Start Trial</p>
+      
+      <button id="start-button" style="display: block;">Start</button>
+    </div>
+    <script>
+      require('./renderer.js');
+    </script>
+  </body>
+</html>
